@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <launch>
-
+    <param name="rostopicname" type="string" value="/xcjtcplidar" />
     
-    <node pkg="rosbag" type="play" name="rosbag_play" args="--clock $(env HOME)/Downloads/2011_09_30_0018.bag"/> 
+    <node pkg="rosbag" type="play" name="rosbag_play" 
+    args="--clock $(env HOME)/rosbag_list/uploader/uplodaer_VLP16_00.bag"/> 
 
     <!-- For Velodyne VLP-16 
     <param name="scan_line" value="16" />
